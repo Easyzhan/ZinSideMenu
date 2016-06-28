@@ -26,4 +26,6 @@
     {
        NSLog(@"arrow was click!!");
     }
+####当需要按左上角的按钮弹出侧栏时只需在按钮的响应事件里：
+        [self.menu show];
 ###tips：如果你想定制你的侧栏属性，请进入LeftMenu修改即可。
