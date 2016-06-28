@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wR0-V7-oG2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--无污染轻量级侧滑-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20130907030648821" highlightedImage="20130907030648821" translatesAutoresizingMaskIntoConstraints="NO" id="qxO-gE-NAc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qxO-gE-NAc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0Jb-dD-4YE"/>
+                            <constraint firstItem="qxO-gE-NAc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3af-T8-zlZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qxO-gE-NAc" secondAttribute="bottom" id="8ky-lq-3QL"/>
+                            <constraint firstAttribute="trailing" secondItem="qxO-gE-NAc" secondAttribute="trailing" id="a9i-4B-9n5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="无污染轻量级侧滑" id="emj-IC-UKZ">
+                        <barButtonItem key="leftBarButtonItem" image="gtorder_refund" id="w2o-oZ-toD">
+                            <color key="tintColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="LeftTopAction:" destination="BYZ-38-t0r" id="YWC-B9-urm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="136"/>
+        </scene>
+        <!--无污染侧滑-->
+        <scene sceneID="ROH-Hf-chI">
+            <objects>
+                <navigationController title="无污染侧滑" automaticallyAdjustsScrollViewInsets="NO" id="wR0-V7-oG2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oI8-3V-cHc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.44313725490196076" green="0.61568627450980395" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8I2-4D-LeG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kl-TZ-M6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="20130907030648821" width="640" height="960"/>
+        <image name="gtorder_refund" width="26" height="20"/>
+    </resources>
+</document>
