@@ -4,13 +4,13 @@
 ![big king](https://github.com/Easyzhan/ZinSideMenu/blob/master/circleCount.gif)
 
 ##使用方式
-    1.拖拽SlipMenu文件夹到项目中
-    2.在主VC中，导入
+####1.拖拽SlipMenu文件夹到项目中
+####2.在主VC中，导入
     #import "MenuView.h" 
     #import "LeftMenu.h"
-    3.控制器遵守协议<HomeMenuViewDelegate>
-    4.@property (nonatomic,strong) MenuView  *menu;
-    5.
+####3.控制器遵守协议<HomeMenuViewDelegate>
+#### 4.@property (nonatomic,strong) MenuView  *menu;
+####5.
         LeftMenu *leftView = [[LeftMenu alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width * 0.8, [[UIScreen mainScreen] bounds].size.height)];
        leftView.cunstomDelegate = self;
         MenuView *menu = [MenuView MenuViewWithDependencyView:self.view MenuView:leftView isShowCoverView:YES];
